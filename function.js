@@ -1,3 +1,14 @@
+var img = document.getElementById("blink")
+
+setInterval(function(){
+    if (img.style.visibility === 'visible'){
+        img.style.visibility = 'hidden';
+    }else{
+        img.style.visibility = 'visible'
+    }
+},500)
+
+
 var ramadanDate = new Date('February 28, 2025 00:00:00').getTime();
 
 setInterval(function() {
